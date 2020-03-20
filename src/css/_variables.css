@@ -1,0 +1,22 @@
+/*
+ * variables
+ ******************************************************************************/
+:root {
+
+  /* Colors */
+  --colorBorder: 201, 201, 201;
+  --colorCTA: 31, 143, 197;
+  --colorFont: 19, 37, 51;
+  --colorPageBackground: 255, 255, 255;
+
+  /* Fonts */
+  --fontSerif: "Roboto Slab", serif;
+  --fontSansSerif: "Roboto", sans-serif;
+}
+
+/*
+ * media-queries
+ ******************************************************************************/
+@custom-media --desktop (min-width: 960px);
+@custom-media --tablet (min-width: 640px);
+@custom-media --retina (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi);

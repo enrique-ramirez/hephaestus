@@ -1,0 +1,49 @@
+{
+  "extends": [
+    "airbnb-base"
+  ],
+  "env": {
+    "jest": true,
+    "node": true,
+    "browser": true,
+    "es6": true,
+    "jquery": true
+  },
+  "globals": {
+    "translations": "readonly",
+    "wc_cart_fragments_params": "readonly",
+    "ajax_login_object": "readonly",
+    "ajax_cart_object": "readonly",
+    "ajax_grow_zone_params": "readonly",
+    "woocommerce_params": "readonly",
+    "wp_settings": "readonly",
+  },
+  "rules": {
+    "arrow-body-style": ["error", "as-needed"],
+    "class-methods-use-this": 0,
+    "eol-last": [1, "always"],
+    "function-paren-newline": ["error", "multiline"],
+    "import/named": 2,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "indent": [2, 2, { "ignoredNodes": ["TemplateLiteral *"] },],
+    "max-len": ["error", 100, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": true,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+    "no-multiple-empty-lines": 2,
+    "no-underscore-dangle": 0,
+    "object-curly-newline": 0,
+    "semi": [2, "never"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {},
+      "webpack": {
+        "config": "./config/webpack/webpack.dev.js"
+      }
+    }
+  }
+}
